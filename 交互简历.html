@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 用less插件配置 -->
+    <link rel="stylesheet" href="css/index.min.css">
+    <!-- <script src="node_modules/less/dist/less.min.js"></script> -->
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- 设置前缀的插件 -->
+    <script src="js/prefixfree.min.js"></script>
+
+    <script>
+        ~function anonymous(window) {
+            //根据当前设备的宽度，动态计算出REM的换算比列，实现页面中元素的等比例缩放
+            let computedREM = function () {
+                let winW = document.documentElement.clientWidth,
+                    desW = 640;
+
+                if (winW >= 640) {
+                    document.documentElement.style.fontSize = '100px';
+                    return;
+
+                }
+                document.documentElement.style.fontSize = winW / desW * 100 + 'px';
+
+            };
+            computedREM();
+            window.addEventListener('resize', computedREM);
+
+        }(window);
+    </script>
+</head>
+
+<body>
+    <main class="mainBox">
+        <!-- 页面加载动画 -->
+        <section class="loadingBox">
+            <div class="title">
+                <h1>移动端学习</h1>
+                <h2>H5场景交互简历</h2>
+            </div>
+            <div class="progress">
+                <div class="current"></div>
+            </div>
+        </section>
+        <!-- 电话接听/关掉 -->
+        <section class="phoneBox">
+            <h2>
+                <img src="image/timg.jfif" alt="">
+                <span>00:00</span>
+            </h2>
+            <div class="answer">
+                <div class="markMove"></div>
+                <a href="javascript:;" class="markLink"></a>
+            </div>
+            <div class="hang">
+                <a href="javascript:;" class="markLink"></a>
+            </div>
+            <audio src="im3/ling.mp3" loop preload="none" muted id="answerBell"></audio>
+            <audio src="im3/ling.mp3" preload="none" muted id="introduction"></audio>
+        </section>
+        <!-- 自动聊天 -->
+        <section class="messageBox">
+            <ul class="wrapper">
+                <li class="self">
+                    <i class="arrow"></i>
+                    <img src="image/left.jfif" alt="" class="pic">
+                    另外一种避免冲突的办法和现代的模块机制很接近，就是从众多模块管理器中挑选一个来使用使用这些工具，
+                    任何库都无需将标识符加入到全局作用域中，而是通过依赖管理器
+                     的机制将库的标识符
+                </li>
+                <li class="inter">
+                    <i class="arrow"></i>
+                    <img src="image/right.jfif" alt="" class="pic">
+                    另外一种避免冲突的办法
+                </li>
+                <li class="self">
+                    <i class="arrow"></i>
+                    <img src="image/left.jfif" alt="" class="pic">
+                    另外一种避免冲突的办法和现代的模块机制很接近，就是从众多模块管理器中挑选一个来使用使用这些工具，
+                    任何库都无需将标识符加入到全局作用域中，而是通过依赖管理器
+                     的机制将库的标识符
+                </li>
+                <li class="inter">
+                    <i class="arrow"></i>
+                    <img src="image/right.jfif" alt="" class="pic">
+                    另外一种避免冲突的办法
+                </li>
+                <li class="self">
+                    <i class="arrow"></i>
+                    <img src="image/left.jfif" alt="" class="pic">
+                    另外一种避免冲突的办法和现代的模块机制很接近，就是从众多模块管理器中挑选一个来使用使用这些工具，
+                    任何库都无需将标识符加入到全局作用域中，而是通过依赖管理器
+                     的机制将库的标识符
+                </li>
+                <li class="inter">
+                    <i class="arrow"></i>
+                    <img src="image/right.jfif" alt="" class="pic">
+                    另外一种避免冲突的办法
+                    任何库都无需将标识符加入到全局作用域中，而是通过依赖管理器
+                </li>
+                <li class="self">
+                    <i class="arrow"></i>
+                    <img src="image/left.jfif" alt="" class="pic">
+                    另外一种避免冲突的办法和现代的模块机制很接近，就是从众多模块管理器中挑选一个来使用使用这些工具，
+                    任何库都无需将标识符加入到全局作用域中，而是通过依赖管理器
+                     的机制将库的标识符
+                </li>
+                <li class="inter">
+                    <i class="arrow"></i>
+                    <img src="image/right.jfif" alt="" class="pic">
+                    另外一种避免冲突的办法
+                    任何库都无需将标识符加入到全局作用域中，而是通过依赖管理器
+                </li>
+                <li class="inter">
+                    <i class="arrow"></i>
+                    <img src="image/right.jfif" alt="" class="pic">
+                    另外一种避免冲突的办法
+                    任何库都无需将标识符加入到全局作用域中，而是通过依赖管理器
+                </li>
+                <li class="inter">
+                    <i class="arrow"></i>
+                    <img src="image/right.jfif" alt="" class="pic">
+                    另外一种避免冲突的办法
+                    任何库都无需将标识符加入到全局作用域中，而是通过依赖管理器
+                </li>
+                <li class="self">
+                    <i class="arrow"></i>
+                    <img src="image/left.jfif" alt="" class="pic">
+                    另外一种避免冲突的办法和现代的模块机制很接近，就是从众多模块管理器中挑选一个来使用使用这些工具，
+                    任何库都无需将标识符加入到全局作用域中，而是通过依赖管理器
+                     的机制将库的标识符
+                </li>
+                <li class="self">
+                    <i class="arrow"></i>
+                    <img src="image/left.jfif" alt="" class="pic">
+                    另外一种避免冲突的办法和现代的模块机制很接近，就是从众多模块管理器中挑选一个来使用使用这些工具，
+                    任何库都无需将标识符加入到全局作用域中，而是通过依赖管理器
+                     的机制将库的标识符
+                </li>
+            </ul>
+
+            <div class="keyBoard">
+                <span></span>
+                <a href="javascript:;" class="submit"></a>
+            </div>
+        </section>
+        <!-- 魔方转动 -->
+        <section class="cubeBox">
+            <ul class="cube">
+                <li>1<img src="" alt=""></li>
+                <li>2<img src="" alt=""></li>
+                <li>3<img src="" alt=""></li>
+                <li>4<img src="" alt=""></li>
+                <li>5<img src="" alt=""></li>
+                <li>6<img src="" alt=""></li>
+            </ul>
+            <img src="" alt="" class="tip">
+        </section>
+        <!-- 轮播图 -->
+        <section class="detailBox">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide page1">
+                        <dl>
+                            <dt></dt>
+                            <dd>
+                                <em>01</em>
+                                <a href="#">HRTML5 + CSS3+移动端响应式布局开发及相关插件的使用</a>
+                            </dd>
+                            <dd>
+                                <em>02</em>
+                                <a href="#">JS中的闭包及堆栈内存以及This的处理等</a>
+                            </dd>
+                            <dd>
+                                <em>03</em>
+                                <a href="#">JS中的面向对象编程，可以基于面向对象封装插件等</a>
+                                </dd>
+                            <dd>
+                                <em>04</em>
+                                <a href="#">ES6中的新特征及数组对象中的常用方法</a>
+                                </dd>
+                            <dd>
+                                <em>05</em>
+                                <a href="#">JS中的同步异步编程及Promise设计模式</a>
+                            </dd>
+                            <dd>
+                                <em>06</em>
+                                <a href="#">JS中的事件委托及事件池及发布订阅模式</a>
+                            </dd>
+                            <dd>
+                                <em>07</em>
+                                <a href="#">JS中的DOM操作以及重绘和回流的优化</a>
+                            </dd>
+                            <dd>
+                                <em>08</em>
+                                <a href="#">HTTP交互及AJAX库的封装及跨域数据共享</a>
+                            </dd>
+                            <dd>
+                                <em>09</em>
+                                <a href="#">VUE：vue-cli / vue-router / vuex / vue element等全家桶</a>
+                            </dd>
+                            <dd>
+                                <em>10</em>
+                                <a href="#">react：react-router / react-redux / dva / axios / ant</a>
+                            </dd>
+                            <dd>
+                                <em>11</em>
+                                <a href="#">辅助技能：node / webpack / git</a>
+                            </dd>
+                        </dl>
+
+                    </div>
+                    <div class="swiper-slide page2">
+                        <h2>课程体系</h2>
+                        <img src="image/share1.png" alt="">
+                        <img src="image/share2.png" alt="">
+                        <img src="image/share3.png" alt="">
+                        <img src="image/share4.png" alt="">
+                        <img src="image/share5.png" alt="">
+                        <img src="image/share6.png" alt="">
+                        <img src="image/bird.png" alt="">
+
+                    </div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+
+</html>
